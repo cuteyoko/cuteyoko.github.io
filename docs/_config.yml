@@ -1,0 +1,7 @@
+remote_theme: rundocs/jekyll-rtd-theme
+
+title: Awesome Yoko
+lang: en
+description: Write an awesome description for your new site here
+
+#theme: jekyll-rtd-theme
