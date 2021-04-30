@@ -4,4 +4,7 @@ title: Awesome Yoko
 lang: en
 description: Write an awesome description for your new site here
 
+readme_index:
+  with_frontmatter: true
+
 #theme: jekyll-rtd-theme
