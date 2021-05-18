@@ -94,7 +94,7 @@ TiKV 选择了第二种方式，将整个 Key-Value 空间分成很多段，每�
 - 以 Region 为单位，将数据分散在集群中所有的节点上，并且尽量保证每个节点上服务的 Region 数量差不多
 - 以 Region 为单位做 Raft 的复制和成员管理
 
-[看图！](https://book.tidb.io/res/session1/chapter2/tidb-storage/3.png)
+![看图！](https://book.tidb.io/res/session1/chapter2/tidb-storage/3.png)
 
 
 
