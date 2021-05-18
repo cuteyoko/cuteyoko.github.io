@@ -25,6 +25,9 @@ graph LR
     id[计算层（SQL）]
 ```
 
+![架构](https://book.tidb.io/res/session1/chapter1/tidb-architecture/1.png)
+
+![对应](https://book.tidb.io/res/session1/chapter1/tidb-architecture/2.png)
 
 ### TiDB时间线
 
