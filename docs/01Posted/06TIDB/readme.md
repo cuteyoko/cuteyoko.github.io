@@ -91,6 +91,13 @@ Hash：按照 Key 做 Hash，根据 Hash 值选择对应的存储节点
 Range：按照 Key 分 Range，某一段连续的 Key 都保存在一个存储节点上
 TiKV 选择了第二种方式，将整个 Key-Value 空间分成很多段，每一段是一系列连续的 Key，将每一段叫做一个 Region，并且会尽量保持每个 Region 中保存的数据不超过一定的大小，目前在 TiKV 中默认是 96MB。每一个 Region 都可以用 [StartKey，EndKey) 这样一个左闭右开区间来描述。
 
+- 以 Region 为单位，将数据分散在集群中所有的节点上，并且尽量保证每个节点上服务的 Region 数量差不多
+- 以 Region 为单位做 Raft 的复制和成员管理
+
+[看图！](https://book.tidb.io/res/session1/chapter2/tidb-storage/3.png)
+
+
+
 ### 计算层
 
 
