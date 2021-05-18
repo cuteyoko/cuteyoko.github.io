@@ -23,7 +23,6 @@
 ```mermaid
 graph LR
     id[计算层（SQL）]
-    id[分布式存储（K-V）]
 ```
 
 
