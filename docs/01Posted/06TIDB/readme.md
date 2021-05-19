@@ -125,6 +125,7 @@ OLAP 全表扫描  ： 表中所有key编码到一个区间内
  如何构造Key?
 - 为每个表分配一个表ID， TableID 集群内唯一整数 （生成函数，snowflake）
 - 每行数据分配行ID RowID，表内唯一 （优化：整数型主键直接作为数据RowID）
+- 每行按照`key: tablePrefix{TableID}_recordPrefixSep{RowID}` & `value: [col1, col2, col3, col4, ...]`组成键值对。
 
 #### 
 
