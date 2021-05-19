@@ -96,7 +96,21 @@ TiKV 选择了第二种方式，将整个 Key-Value 空间分成很多段，每�
 
 ![看图！](https://book.tidb.io/res/session1/chapter2/tidb-storage/3.png)
 
+#### mvcc
 
+多版本并发控制。带Version的key。Version大的放前面，小的放后面。定位到第一个大于等于该key的位置。
+
+#### 分布式ACID
+
+Percolator
+
+```
+tx = tikv.Begin()
+    tx.Set(Key1, Value1)
+    tx.Set(Key2, Value2)
+    tx.Set(Key3, Value3)
+tx.Commit()
+```
 
 ### 计算层
 
