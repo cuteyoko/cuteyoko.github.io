@@ -114,6 +114,20 @@ tx.Commit()
 
 ### 计算层
 
+TiDB在TiKV提供的分布式能力上构建计算引擎。
+（无状态）
+
+#### 表数据 映射 KV Pairs
+
+OLTP 大批量单行CRUD/增删改查 ： key 对应唯一id
+OLAP 全表扫描  ： 表中所有key编码到一个区间内
+
+ 如何构造Key?
+- 为每个表分配一个表ID， TableID 集群内唯一整数 （生成函数，snowflake）
+- 每行数据分配行ID RowID，表内唯一 （优化：整数型主键直接作为数据RowID）
+
+#### 
+
 
 
 
