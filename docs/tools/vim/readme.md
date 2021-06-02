@@ -1,6 +1,7 @@
 # vim使用简介
 
 ## 01 模式转换
+
 ```mermaid
 stateDiagram-v2
 Normal --> insert : <kbd>i</kbd>
@@ -11,3 +12,19 @@ Normal --> VisualLine : <kbd>Shift</kbd> + <kbd>V</kbd>
 Normal --> VisualBlock : <kbd>Ctrl</kbd> + <kbd>V</kbd>
 Normal --> Command : <kbd>#colon;</kbd>
 ```
+
+## 02 命令简介
+
+Normal Mode
+
+```
+x
+```
+
+Insert Mode
+
+```
+
+```
+
+## 03 
