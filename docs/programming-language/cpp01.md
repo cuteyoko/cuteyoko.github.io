@@ -99,3 +99,7 @@ cout << "hello world" << endl;
 ```
 return 0;
 ```
+
+## 从代码到执行
+
+### 执行main函数
