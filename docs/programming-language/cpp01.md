@@ -9,7 +9,7 @@
 
 using namespace std;
 
-int main()
+int main(int argv, char *argv[])
 {
     cout << "hello world" << endl;
     return 0;
@@ -66,3 +66,15 @@ xx /x xx.cpp /o xx /std c++11
 
 ### main函数
 
+```
+int main()
+```
+
+c++函数以如下形态存在
+
+```
+返回值 函数名(参数1, 参数2)
+{
+    函数体
+}
+```
