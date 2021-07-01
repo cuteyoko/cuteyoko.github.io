@@ -24,3 +24,5 @@
 这是怎么回事？指向了哪里呢？
 
 ### 可执行文件链接过程
+
+https://www.cnblogs.com/xuanyuan/p/13894905.html
